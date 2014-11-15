@@ -1,0 +1,10 @@
+.fancy {
+  font-family: rationale;
+  font-size: 2em;
+  color: #f00;
+}
+
+.row {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
