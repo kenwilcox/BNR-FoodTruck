@@ -23,10 +23,17 @@
   margin: 0 auto;
   max-width: 640px;
   width: 90%;
-  outline: 1px solid #f00;
+  /*outline: 1px solid #f00;*/
+}
+
+ul {
+  padding-left: 10px;
 }
 
 @media (min-width: 480px) {
+  body {
+    background-color: papayawhip;
+  }
   .column {
     float: left;
     /* use rem on browsers that support it, em for those that don't */
@@ -42,8 +49,31 @@
   .column.fourth { width: 24.95%; }
 
 @media (min-width: 1024px) {
+  body {
+    background-color: peachpuff;
+  }
   .container {
     max-width: 1024px;
+  }
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1em;
+    padding-right: 1rem;
+  }
+  .column.full { width: 50%; }
+  .column.two-thirds { width: 66.7% }
+  .column.half { width: 50% }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 24.9% }
+}
+
+@media (min-width: 1280px) {
+  body {
+    background-color: rebeccapurple;
+  }
+  .container {
+    max-width: 1280px;
   }
   .column {
     float: left;
