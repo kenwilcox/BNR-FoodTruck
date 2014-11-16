@@ -1,1 +1,3 @@
-// Currently blank on purpose
+var toggleNextElement = function () {
+  console.log('Something will be toggled.');
+};

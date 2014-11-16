@@ -23,7 +23,7 @@
             <h2>
               Specialty Burritos
             </h2>
-            <div class="section-content row clearfix">
+            <div class="section-content row clearfix hidden">
               <div class="menu-item column third">
                 <h3>El Gringo</h3>
                 <ul>
@@ -54,7 +54,7 @@
             <h2>
               Desserts
             </h2>
-            <div class="section-content row clearfix">
+            <div class="section-content row clearfix hidden">
               <div class="menu-item column third">
                 <h3>Flan</h3>
                 <ul>
@@ -84,6 +84,11 @@
         </div>
       </div>
     </div>
+    <script src="scripts/toggler.js"></script>
+    <script>
+      var sectionLabel = document.querySelector('h2');
+      var menuContentHolder = document.querySelector('#menu-content');
+    </script>
   </body>
 </html>
 
