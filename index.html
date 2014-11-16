@@ -86,9 +86,13 @@
     </div>
     <script src="scripts/toggler.js"></script>
     <script>
-      var sectionLabel = document.querySelector('h2');
-      sectionLabel.addEventListener('click', toggleNextElement);
       var menuContentHolder = document.querySelector('#menu-content');
+
+      var sectionLabelArray = document.querySelectorAll('h2');
+      sectionLabelArray = [].slice.call(sectionLabelArray);
+      sectionLabelArray.forEach(function (label) {
+        label.addEventListener('click', toggleNextElement);
+      });
     </script>
   </body>
 </html>
