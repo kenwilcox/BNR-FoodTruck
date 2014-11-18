@@ -12,14 +12,14 @@
 .slider {
   overflow: hidden;
   max-height: 999px;
-  transition: max-height 500ms;
+  transition: all 500ms;
 }
 
 .slider-hidden {
   max-height: 0px;
   padding: 0;
   border: none;
-  transition: max-height: 500ms;
+  transition: all: 500ms;
 }
 
 .hidden {
