@@ -12,3 +12,7 @@
 .hidden {
   display: none;
 }
+
+.new-color {
+  background-color: #ff0;
+}
