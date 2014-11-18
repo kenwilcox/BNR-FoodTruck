@@ -9,6 +9,19 @@
   padding: 0.5rem;
 }
 
+.slider {
+  overflow: hidden;
+  max-height: 999px;
+  transition: max-height 500ms;
+}
+
+.slider-hidden {
+  max-height: 0px;
+  padding: 0;
+  border: none;
+  transition: max-height: 500ms;
+}
+
 .hidden {
   display: none;
 }
