@@ -12,14 +12,22 @@
 .slider {
   overflow: hidden;
   max-height: 999px;
-  transition: all 500ms;
+  /*transition: all 500ms;*/
+  transition-property: max-height, padding, border;
+  transition-duration: 500ms, 0s, 0s;
+  transition-delay: 50ms, 50ms, 100ms;
+  transition-timing-function: ease-in;
 }
 
 .slider-hidden {
   max-height: 0px;
   padding: 0;
   border: none;
-  transition: all: 500ms;
+  /*transition: all: 500ms;*/
+  transition-property: max-height, padding, border;
+  transition-duration: 500ms, 0s, 0s;
+  transition-delay: 0s, 500ms, 0ms;
+  transition-timing-function: ease-out;
 }
 
 .hidden {
