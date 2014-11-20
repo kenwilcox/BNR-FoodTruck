@@ -89,7 +89,7 @@
     <script>
       var menuContentHolder = document.querySelector('#menu-content');
 
-      var sectionLabelArray = document.querySelectorAll('h2');
+      var sectionLabelArray = document.querySelectorAll('.js-slider-trigger');
       sectionLabelArray = [].slice.call(sectionLabelArray);
       sectionLabelArray.forEach(function (label) {
         label.addEventListener('click', toggleNextElement('slider-hidden', 'new-color'));
