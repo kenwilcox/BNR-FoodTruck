@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="stylesheets/normalize.css">
       <link rel="stylesheet" href="stylesheets/grid.css">
       <link rel="stylesheet" href="stylesheets/theme.css">
-      <script src="scripts/libs/prefixfree.min.js"></script>
+      <!-- <script src="scripts/libs/prefixfree.min.js"></script> -->
   </head>
   <body>
     <div class="container">
@@ -94,6 +94,7 @@
       sectionLabelArray = [].slice.call(sectionLabelArray);
       sectionLabelArray.forEach(function (label) {
         label.addEventListener('click', toggleNextElement('slider-hidden', 'new-color'));
+        // label.addEventListener('click', toggleNextElement('pizazz', 'new-color'));
       });
 
       // Flash on expand
@@ -105,12 +106,14 @@
           if (event.propertyName === 'max-height') {
             event.target.classList.toggle('pizazz');
           } 
-          
-          if (event.propertyName === 'background') {
-            event.target.classList.toggle('pizazz');
-          }          
         });
       });
+      window.setInterval(function() {
+        var el = document.querySelector("div.pizazz");
+        if (el) {
+          el.classList.remove('pizazz');
+        }
+      }, 300);
     </script>
   </body>
 </html>

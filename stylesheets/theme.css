@@ -39,6 +39,7 @@
   color: white;
   transition-property: color, background-color;
   transition-duration: 100ms, 100ms;
+  transition-delay: 100ms, 0s;
   transition-timing-function: ease-out; 
 }
 
