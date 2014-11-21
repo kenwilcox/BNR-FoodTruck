@@ -86,6 +86,7 @@
       </div>
     </div>
     <script src="scripts/toggler.js"></script>
+    <script src="scripts/transition.js"></script>
     <script>
       var menuContentHolder = document.querySelector('#menu-content');
 
@@ -93,6 +94,18 @@
       sectionLabelArray = [].slice.call(sectionLabelArray);
       sectionLabelArray.forEach(function (label) {
         label.addEventListener('click', toggleNextElement('slider-hidden', 'new-color'));
+      });
+
+      // Flash on expand
+      var currentEventName = transitionEndEventName();
+      var theElement = document.querySelectorAll('.slider-hidden');
+      theElement = [].slice.call(theElement);
+      theElement.forEach(function(item) {
+        item.addEventListener(currentEventName, function(event) {
+          if (event.propertyName === 'max-height') {
+            event.target.classList.toggle('pizazz');
+          } 
+        });
       });
     </script>
   </body>

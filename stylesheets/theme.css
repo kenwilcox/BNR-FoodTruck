@@ -34,6 +34,19 @@
   transition-timing-function: ease-out;
 }
 
+.pizazz {
+  background-color: orange;
+  color: white;
+  transition-property: color, background-color;
+  transition-duration: 100ms, 100ms;
+  transition-timing-function: ease-out; 
+}
+
+.pizazz:after {
+  background-color: transparent;
+  color: black;
+}
+
 .hidden {
   display: none;
 }
