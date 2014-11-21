@@ -42,11 +42,6 @@
   transition-timing-function: ease-out; 
 }
 
-.pizazz:after {
-  background-color: transparent;
-  color: black;
-}
-
 .hidden {
   display: none;
 }
